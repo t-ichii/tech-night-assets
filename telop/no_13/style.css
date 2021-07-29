@@ -1,0 +1,47 @@
+body {
+  font-family: 'M PLUS Rounded 1c',sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  background: #000;
+  min-height: 100vh;
+}
+
+h1 {
+  white-space: nowrap;
+  font-size: 10rem;
+  font-weight: 100;
+  font-style: italic;
+  color: #fff;
+  padding: 4rem 6rem;
+  animation: scrollX 20s linear infinite;
+  text-align: center;
+  text-shadow:
+    0 0 1rem #DC1E32,
+    0 0 1rem #DC1E32,
+    0 0 2rem #DC1E32,
+    0 0 3rem #DC1E32;
+}
+
+h1::-moz-selection {
+  background-color: #2864F0;
+  color: #DC1E32
+}
+
+h1::selection {
+  background-color: #2864F0;
+  color: #DC1E32
+}
+
+h1:focus {
+  outline: none;
+}
+
+@keyframes scrollX {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
