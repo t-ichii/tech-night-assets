@@ -20,20 +20,6 @@ h1 {
   text-align: center;
 }
 
-h1::-moz-selection {
-  background-color: #2864F0;
-  color: #DC1E32;
-}
-
-h1::selection {
-  background-color: #2864F0;
-  color: #DC1E32;
-}
-
-h1:focus {
-  outline: none;
-}
-
 /* Animate neon flicker */
 @keyframes flicker {
     
