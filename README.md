@@ -15,3 +15,15 @@ youtube版TechNightで使う画面要素を配置するRepo。OBSでgithub pages
 ### `/styles`
 
 共通StyleSheetを配置するディレクトリ
+
+### `/templates`
+
+各回用のディレクトリを自動生成するときにコピーするファイルが入っているディレクトリ
+
+## 新しいエピソードのディレクトリを作るときは
+
+```bash
+$ make generate_new_episode name=hoge
+```
+
+のように実行すると `/no_hoge` とテンプレートファイルがコピーされるのでこの中のファイルを更新してcommitすること
