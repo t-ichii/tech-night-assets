@@ -1,0 +1,38 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  background: #000;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 10rem;
+  font-weight: 900;
+  
+  color: #3264DC;
+  padding: 4rem 6rem;
+  text-align: center;
+}
+
+h1.scroll {
+  border: none;
+  white-space: nowrap;
+  animation: scrollX 20s linear infinite;
+  text-shadow:
+    0 0 1rem #fff,
+    0 0 1rem #fff,
+    0 0 2rem #fff,
+    0 0 3rem #fff;
+}
+
+@keyframes scrollX {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
